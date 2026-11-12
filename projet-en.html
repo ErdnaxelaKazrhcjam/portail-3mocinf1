@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The project · 3MOCINF1 Portal</title>
+  <meta name="description" content="The topic, schedule, requirements and assessment of the web project of class 3MOCINF1.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="haut">
+  <a class="saut" href="#contenu">Skip to content</a>
+
+  <header class="entete">
+    <div class="entete-ligne">
+      <a class="marque" href="index-en.html">
+        <img src="img/logo.svg" alt="" width="40" height="40">
+        <span>3MOCINF1 Portal</span>
+      </a>
+      <button class="menu-bouton" aria-expanded="false" aria-controls="menu">Menu</button>
+    </div>
+    <nav id="menu" class="menu" aria-label="Main navigation">
+      <ul>
+        <li><a href="index-en.html">Home</a></li>
+        <li><a href="projet-en.html" aria-current="page">The project</a></li>
+        <li><a href="credits-en.html">Credits</a></li>
+        <li><a href="projet.html" lang="fr" hreflang="fr" class="lien-langue">Français</a></li>
+      </ul>
+    </nav>
+    <div class="reglages" role="group" aria-label="Display settings">
+      <button id="bouton-theme" class="bouton-theme" aria-pressed="false">Dark mode</button>
+      <label for="curseur-taille">Text size</label>
+      <input type="range" id="curseur-taille" min="80" max="140" step="10" value="100">
+      <span id="valeur-taille">100 %</span>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <h1>The project</h1>
+    <p class="chapeau">A personal website, designed, coded and published in class during weeks 4 to 6. It counts for 70% of the module's grade.</p>
+
+    <section aria-labelledby="titre-sujet">
+      <h2 id="titre-sujet">The topic</h2>
+      <p>Your website introduces <strong>something you know well</strong> (a hobby, a club, a place, a game, a recipe, an artist…) to <strong>a specific audience</strong>, which you name from the start.</p>
+      <p>For example: “introducing indoor climbing to first-year students who have never tried it”.</p>
+    </section>
+
+    <section aria-labelledby="titre-calendrier">
+      <h2 id="titre-calendrier">The schedule</h2>
+      <ol class="etapes">
+        <li data-debut="2026-11-12" data-fin="2026-11-18">
+          <img src="img/etape-maquette.svg" alt="Drawing of a sheet of paper with a page mockup and a pencil" width="120" height="120">
+          <div>
+            <h3>Homework for week 4</h3>
+            <p>Choose a topic and an audience, write three sentences about the website's goal, list three or four pages and gather the content: texts, free images with their source, a YouTube video.</p>
+          </div>
+        </li>
+        <li data-debut="2026-11-19" data-fin="2026-11-25">
+          <img src="img/etape-code.svg" alt="Drawing of a dark screen with HTML code symbols" width="120" height="120">
+          <div>
+            <h3>Week 4: design</h3>
+            <p>A lesson on user experience, a paper mockup of each page, a test in pairs, then creating the repository and the first push: the website is online from day one.</p>
+          </div>
+        </li>
+        <li data-debut="2026-11-26" data-fin="2026-12-02">
+          <img src="img/etape-publication.svg" alt="Drawing of a globe with an upward arrow, for online publication" width="120" height="120">
+          <div>
+            <h3>Week 5: build</h3>
+            <p>Several pages, a shared menu, a video, light images. Cross-testing: you visit a classmate's website and open GitHub issues for them.</p>
+          </div>
+        </li>
+        <li data-debut="2026-12-03" data-fin="2026-12-03">
+          <img src="img/etape-oral.svg" alt="Drawing of a presentation screen with a rising chart" width="120" height="120">
+          <div>
+            <h3>Week 6: present</h3>
+            <p>Final touches, a code freeze at a set time, presentations, then the project fair.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="titre-cahier">
+      <h2 id="titre-cahier">The requirements</h2>
+      <div class="colonnes">
+        <div>
+          <h3>Structure</h3>
+          <ul>
+            <li>At least three pages linked by a shared menu, with <code>index.html</code> as the home page.</li>
+            <li><code>header</code>, <code>nav</code>, <code>main</code> and <code>footer</code> on every page.</li>
+            <li>Headings in the right order, text written by you, lists and links.</li>
+            <li>An English version of each page, translated with AI, in a separate file (<code>index-en.html</code>…).</li>
+          </ul>
+          <h3>Content</h3>
+          <ul>
+            <li>At least four images, each with a useful <code>alt</code>.</li>
+            <li>A video embedded from YouTube.</li>
+            <li>The sources of images, fonts, figures and facts.</li>
+            <li>No personal data, and no photo of a person without their consent.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Style</h3>
+          <ul>
+            <li>A single <code>style.css</code> file, with rules on tags and on classes.</li>
+            <li>Text with good contrast against its background.</li>
+            <li>A website that is readable on a phone (responsive).</li>
+          </ul>
+          <h3>JavaScript and accessibility</h3>
+          <ul>
+            <li>At least two interactions that you can explain.</li>
+            <li>A website that can be browsed with the keyboard, using the Tab key.</li>
+          </ul>
+          <h3>User experience</h3>
+          <ul>
+            <li>No dark patterns… except a single, deliberate one that you can name during the oral.</li>
+          </ul>
+          <h3>Publication</h3>
+          <ul>
+            <li>The website is online on GitHub Pages and listed on this portal.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="titre-grille">
+      <h2 id="titre-grille">Assessment</h2>
+      <table>
+        <caption>How the project grade is split (70% of the module)</caption>
+        <thead>
+          <tr><th scope="col">Part</th><th scope="col">Weight</th><th scope="col">What is assessed</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Mockup</th><td>15%</td><td>Pages and navigation drawn, user experience choices, how closely the final website follows it, or justified changes</td></tr>
+          <tr><th scope="row">Final website</th><td>35%</td><td>Requirements, quality of the HTML and CSS, working JavaScript, content</td></tr>
+          <tr><th scope="row">Commits</th><td>15%</td><td>Regular work from one lesson to the next, one step per commit, clear messages, AI declared</td></tr>
+          <tr><th scope="row">Oral</th><td>35%</td><td>Presentation of the website and understanding of the code</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="titre-regles">
+      <h2 id="titre-regles">The rules</h2>
+      <ul>
+        <li>The project is done in class: commits made outside lessons will be questioned.</li>
+        <li>AI is allowed if you declare it in the commit message and can explain every line.</li>
+        <li>No framework, CMS or website builder: HTML, CSS and JavaScript written by you.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="pied">
+    <p>Web projects portal of class 3MOCINF1 · Computer science option · 2026</p>
+    <p>Built by Alexandre Majchrzak, the module's teacher, as an example of the project requirements.</p>
+    <p><a href="credits-en.html">Credits and sources</a> · <a href="#haut">Back to top</a></p>
+  </footer>
+
+</body>
+</html>

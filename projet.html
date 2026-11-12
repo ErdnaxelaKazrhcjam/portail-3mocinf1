@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Le projet · Portail 3MOCINF1</title>
+  <meta name="description" content="Le sujet, le calendrier, le cahier des charges et l'évaluation du projet web de la classe 3MOCINF1.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="haut">
+  <a class="saut" href="#contenu">Aller au contenu</a>
+
+  <header class="entete">
+    <div class="entete-ligne">
+      <a class="marque" href="index.html">
+        <img src="img/logo.svg" alt="" width="40" height="40">
+        <span>Portail 3MOCINF1</span>
+      </a>
+      <button class="menu-bouton" aria-expanded="false" aria-controls="menu">Menu</button>
+    </div>
+    <nav id="menu" class="menu" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="projet.html" aria-current="page">Le projet</a></li>
+        <li><a href="credits.html">Crédits</a></li>
+        <li><a href="projet-en.html" lang="en" hreflang="en" class="lien-langue">English</a></li>
+      </ul>
+    </nav>
+    <div class="reglages" role="group" aria-label="Réglages d'affichage">
+      <button id="bouton-theme" class="bouton-theme" aria-pressed="false">Mode sombre</button>
+      <label for="curseur-taille">Taille du texte</label>
+      <input type="range" id="curseur-taille" min="80" max="140" step="10" value="100">
+      <span id="valeur-taille">100 %</span>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <h1>Le projet</h1>
+    <p class="chapeau">Un site web personnel, conçu, codé et publié en classe pendant les semaines 4 à 6. Il compte pour 70 % de la note du module.</p>
+
+    <section aria-labelledby="titre-sujet">
+      <h2 id="titre-sujet">Le sujet</h2>
+      <p>Votre site fait découvrir <strong>quelque chose que vous connaissez bien</strong> (une passion, un club, un lieu, un jeu, une recette, un artiste…) à <strong>un public précis</strong>, que vous nommez dès le départ.</p>
+      <p>Par exemple : « faire découvrir l'escalade en salle à des élèves de 1re qui n'en ont jamais fait ».</p>
+    </section>
+
+    <section aria-labelledby="titre-calendrier">
+      <h2 id="titre-calendrier">Le calendrier</h2>
+      <ol class="etapes">
+        <li data-debut="2026-11-12" data-fin="2026-11-18">
+          <img src="img/etape-maquette.svg" alt="Dessin d'une feuille de papier avec la maquette d'une page et un crayon" width="120" height="120">
+          <div>
+            <h3>Devoir pour la semaine 4</h3>
+            <p>Choisir un sujet et un public, écrire trois phrases sur l'objectif du site, lister trois ou quatre pages et rassembler les contenus : textes, images libres de droits avec leur source, une vidéo YouTube.</p>
+          </div>
+        </li>
+        <li data-debut="2026-11-19" data-fin="2026-11-25">
+          <img src="img/etape-code.svg" alt="Dessin d'un écran sombre avec les symboles du code HTML" width="120" height="120">
+          <div>
+            <h3>Semaine 4 : concevoir</h3>
+            <p>Cours sur l'expérience utilisateur, maquette papier de chaque page, test en binôme, puis création du dépôt et premier push : le site est en ligne dès le premier jour.</p>
+          </div>
+        </li>
+        <li data-debut="2026-11-26" data-fin="2026-12-02">
+          <img src="img/etape-publication.svg" alt="Dessin d'un globe terrestre surmonté d'une flèche qui monte, pour la publication en ligne" width="120" height="120">
+          <div>
+            <h3>Semaine 5 : construire</h3>
+            <p>Plusieurs pages, un menu commun, une vidéo, des images légères. Test croisé : vous visitez le site d'un voisin et lui ouvrez des tickets GitHub.</p>
+          </div>
+        </li>
+        <li data-debut="2026-12-03" data-fin="2026-12-03">
+          <img src="img/etape-oral.svg" alt="Dessin d'un écran de présentation avec un graphique qui monte" width="120" height="120">
+          <div>
+            <h3>Semaine 6 : présenter</h3>
+            <p>Dernières finitions, gel du code à une heure fixe, présentations, puis l'expo des projets.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="titre-cahier">
+      <h2 id="titre-cahier">Le cahier des charges</h2>
+      <div class="colonnes">
+        <div>
+          <h3>Structure</h3>
+          <ul>
+            <li>Au moins trois pages reliées par un menu commun, avec <code>index.html</code> comme accueil.</li>
+            <li><code>header</code>, <code>nav</code>, <code>main</code> et <code>footer</code> sur chaque page.</li>
+            <li>Des titres hiérarchisés, du texte rédigé par vous, des listes et des liens.</li>
+            <li>Une version anglaise de chaque page, traduite avec l'IA, dans un fichier à part (<code>index-en.html</code>…).</li>
+          </ul>
+          <h3>Contenu</h3>
+          <ul>
+            <li>Au moins quatre images, chacune avec un <code>alt</code> utile.</li>
+            <li>Une vidéo intégrée depuis YouTube.</li>
+            <li>Les sources des images, des polices, des chiffres et des faits.</li>
+            <li>Aucune donnée personnelle, ni photo d'une personne sans son accord.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Style</h3>
+          <ul>
+            <li>Une seule feuille <code>style.css</code>, avec des règles sur des balises et sur des classes.</li>
+            <li>Un texte bien contrasté sur son fond.</li>
+            <li>Un site lisible sur téléphone (responsive).</li>
+          </ul>
+          <h3>JavaScript et accessibilité</h3>
+          <ul>
+            <li>Au moins deux interactions que vous savez expliquer.</li>
+            <li>Un site qu'on peut parcourir au clavier, avec la touche Tab.</li>
+          </ul>
+          <h3>Expérience utilisateur</h3>
+          <ul>
+            <li>Aucun dark pattern… sauf un seul, volontaire, que vous savez nommer à l'oral.</li>
+          </ul>
+          <h3>Publication</h3>
+          <ul>
+            <li>Le site est en ligne sur GitHub Pages et référencé sur ce portail.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="titre-grille">
+      <h2 id="titre-grille">L'évaluation</h2>
+      <table>
+        <caption>Répartition de la note du projet (70 % du module)</caption>
+        <thead>
+          <tr><th scope="col">Bloc</th><th scope="col">Poids</th><th scope="col">Ce qui est regardé</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Maquette</th><td>15 %</td><td>Pages et navigation dessinées, choix d'expérience utilisateur, fidélité du site final ou écarts justifiés</td></tr>
+          <tr><th scope="row">Site final</th><td>35 %</td><td>Cahier des charges, qualité du HTML et du CSS, JavaScript qui fonctionne, contenu</td></tr>
+          <tr><th scope="row">Commits</th><td>15 %</td><td>Régularité d'une séance à l'autre, une étape par commit, messages clairs, IA déclarée</td></tr>
+          <tr><th scope="row">Oral</th><td>35 %</td><td>Présentation du site et compréhension du code</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="titre-regles">
+      <h2 id="titre-regles">Les règles</h2>
+      <ul>
+        <li>Le projet se fait en classe : les commits faits en dehors des séances sont questionnés.</li>
+        <li>L'IA est autorisée si vous la déclarez dans le message du commit et si vous savez expliquer chaque ligne.</li>
+        <li>Pas de framework, de CMS ni de constructeur de sites : du HTML, du CSS et du JavaScript écrits par vous.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="pied">
+    <p>Portail des projets web de la classe 3MOCINF1 · OC informatique · 2026</p>
+    <p>Site réalisé par Alexandre Majchrzak, enseignant du module, comme exemple du cahier des charges.</p>
+    <p><a href="credits.html">Crédits et sources</a> · <a href="#haut">Revenir en haut</a></p>
+  </footer>
+
+</body>
+</html>

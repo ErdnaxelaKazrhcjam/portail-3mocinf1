@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accueil · Portail 3MOCINF1</title>
+  <meta name="description" content="Les sites web réalisés par les élèves de la classe 3MOCINF1, publiés sur GitHub Pages.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="haut">
+  <a class="saut" href="#contenu">Aller au contenu</a>
+
+  <header class="entete">
+    <div class="entete-ligne">
+      <a class="marque" href="index.html">
+        <img src="img/logo.svg" alt="" width="40" height="40">
+        <span>Portail 3MOCINF1</span>
+      </a>
+      <button class="menu-bouton" aria-expanded="false" aria-controls="menu">Menu</button>
+    </div>
+    <nav id="menu" class="menu" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html" aria-current="page">Accueil</a></li>
+        <li><a href="projet.html">Le projet</a></li>
+        <li><a href="credits.html">Crédits</a></li>
+        <li><a href="index-en.html" lang="en" hreflang="en" class="lien-langue">English</a></li>
+      </ul>
+    </nav>
+    <div class="reglages" role="group" aria-label="Réglages d'affichage">
+      <button id="bouton-theme" class="bouton-theme" aria-pressed="false">Mode sombre</button>
+      <label for="curseur-taille">Taille du texte</label>
+      <input type="range" id="curseur-taille" min="80" max="140" step="10" value="100">
+      <span id="valeur-taille">100 %</span>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="hero">
+      <div>
+        <h1>Les sites web de la classe 3MOCINF1</h1>
+        <p class="chapeau">Pendant trois semaines, chaque élève conçoit, code et publie <strong>son propre site</strong> sur un sujet qu'il connaît bien. Ce portail les rassemble tous.</p>
+        <p><a class="bouton-lien" href="projet.html">Découvrir le projet</a></p>
+      </div>
+      <img src="img/accueil.svg" alt="Dessin d'une fenêtre de navigateur qui affiche une page web : un titre, des lignes de texte, un bouton orange et une image" width="480" height="300">
+    </section>
+
+    <section class="encart" aria-labelledby="titre-expo">
+      <h2 id="titre-expo">Prochain rendez-vous : l'expo des projets</h2>
+      <p>Jeudi 3 décembre 2026 à 13 h 30, chaque site reste ouvert à son poste et la classe circule.</p>
+      <p class="compte" id="compte">Rendez-vous le jeudi 3 décembre 2026.</p>
+    </section>
+
+    <section aria-labelledby="titre-projets">
+      <h2 id="titre-projets">Les projets</h2>
+      <p>Les sites des élèves apparaissent ici à partir de la semaine 4, au fur et à mesure de leur publication.</p>
+      <div class="recherche">
+        <label for="filtre">Chercher un projet (titre, auteur ou sujet)</label>
+        <input type="search" id="filtre" placeholder="Par exemple : escalade">
+      </div>
+      <p id="nombre-projets" class="nombre" aria-live="polite"></p>
+      <ul id="projets" class="cartes"></ul>
+      <noscript><p>Activez JavaScript pour afficher la liste des projets.</p></noscript>
+    </section>
+
+    <section aria-labelledby="titre-video">
+      <h2 id="titre-video">Comment une page arrive jusqu'à vous</h2>
+      <p>Avant de construire un site, il vaut la peine de comprendre ce qui se passe quand on tape une adresse : le navigateur envoie une requête HTTP à un serveur, qui lui renvoie du HTML. Cette vidéo de Code.org l'explique en six minutes (en anglais, sous-titres disponibles).</p>
+      <div class="video">
+        <iframe src="https://www.youtube-nocookie.com/embed/kBXQZMmiA4s" title="Vidéo de Code.org : The Internet, HTTP and HTML" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p class="source">Source : Code.org, « The Internet: HTTP &amp; HTML », sur YouTube.</p>
+    </section>
+  </main>
+
+  <footer class="pied">
+    <p>Portail des projets web de la classe 3MOCINF1 · OC informatique · 2026</p>
+    <p>Site réalisé par Alexandre Majchrzak, enseignant du module, comme exemple du cahier des charges.</p>
+    <p><a href="credits.html">Crédits et sources</a> · <a href="#haut">Revenir en haut</a></p>
+  </footer>
+  <aside id="bandeau" class="bandeau" aria-labelledby="bandeau-titre" hidden>
+    <p id="bandeau-titre"><strong>Ne ratez aucun projet !</strong> Recevez une alerte à chaque nouveau site publié.</p>
+    <div class="bandeau-boutons">
+      <button class="bandeau-oui">Oui, je veux réussir mon projet</button>
+      <button class="bandeau-non">non merci, je préfère rater le mien</button>
+    </div>
+  </aside>
+</body>
+</html>

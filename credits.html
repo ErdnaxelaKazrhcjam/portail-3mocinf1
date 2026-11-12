@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crédits · Portail 3MOCINF1</title>
+  <meta name="description" content="Les sources des images, de la vidéo et des polices du portail, et la déclaration de l'aide de l'IA.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="haut">
+  <a class="saut" href="#contenu">Aller au contenu</a>
+
+  <header class="entete">
+    <div class="entete-ligne">
+      <a class="marque" href="index.html">
+        <img src="img/logo.svg" alt="" width="40" height="40">
+        <span>Portail 3MOCINF1</span>
+      </a>
+      <button class="menu-bouton" aria-expanded="false" aria-controls="menu">Menu</button>
+    </div>
+    <nav id="menu" class="menu" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="projet.html">Le projet</a></li>
+        <li><a href="credits.html" aria-current="page">Crédits</a></li>
+        <li><a href="credits-en.html" lang="en" hreflang="en" class="lien-langue">English</a></li>
+      </ul>
+    </nav>
+    <div class="reglages" role="group" aria-label="Réglages d'affichage">
+      <button id="bouton-theme" class="bouton-theme" aria-pressed="false">Mode sombre</button>
+      <label for="curseur-taille">Taille du texte</label>
+      <input type="range" id="curseur-taille" min="80" max="140" step="10" value="100">
+      <span id="valeur-taille">100 %</span>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <h1>Crédits et sources</h1>
+    <p class="chapeau">Tout ce qui n'a pas été créé pour ce site est cité ici, comme le demande le cahier des charges.</p>
+
+    <section aria-labelledby="titre-realisation">
+      <h2 id="titre-realisation">Réalisation</h2>
+      <p>Portail réalisé par Alexandre Majchrzak, enseignant du module Développement web (OC informatique, 3MOCINF1), en HTML, CSS et JavaScript, sans framework.</p>
+      <p><strong>Aide de l'IA :</strong> le code et les traductions anglaises ont été préparés avec l'aide de Claude (Anthropic), puis relus.</p>
+    </section>
+
+    <section aria-labelledby="titre-images">
+      <h2 id="titre-images">Images</h2>
+      <ul>
+        <li>Logo, illustration de l'accueil et illustrations du calendrier : dessins créés pour ce site, au format SVG.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="titre-video-credits">
+      <h2 id="titre-video-credits">Vidéo</h2>
+      <ul>
+        <li>« The Internet: HTTP &amp; HTML », Code.org, publiée sur YouTube et intégrée sans cookies (<code>youtube-nocookie.com</code>).</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="titre-polices">
+      <h2 id="titre-polices">Polices</h2>
+      <ul>
+        <li>Polices déjà installées sur l'appareil du visiteur (police système) : rien à télécharger, rien à citer, et un site plus léger.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="titre-dark">
+      <h2 id="titre-dark">Le dark pattern de ce site</h2>
+      <p>Comme chaque projet, ce portail contient un seul dark pattern, volontaire. L'avez-vous trouvé ?</p>
+      <details>
+        <summary>Voir la réponse</summary>
+        <p>Le bandeau « Ne ratez aucun projet ! » de la page d'accueil utilise le <strong>confirmshaming</strong> : le bouton pour refuser culpabilise le visiteur (« non merci, je préfère rater le mien ») et il est volontairement moins visible que le bouton pour accepter. En plus, ce portail n'envoie aucune alerte : le bandeau ne sert à rien.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="pied">
+    <p>Portail des projets web de la classe 3MOCINF1 · OC informatique · 2026</p>
+    <p>Site réalisé par Alexandre Majchrzak, enseignant du module, comme exemple du cahier des charges.</p>
+    <p><a href="credits.html">Crédits et sources</a> · <a href="#haut">Revenir en haut</a></p>
+  </footer>
+
+</body>
+</html>

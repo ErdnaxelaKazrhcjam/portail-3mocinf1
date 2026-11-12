@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home · 3MOCINF1 Portal</title>
+  <meta name="description" content="The websites built by the students of class 3MOCINF1, published on GitHub Pages.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="haut">
+  <a class="saut" href="#contenu">Skip to content</a>
+
+  <header class="entete">
+    <div class="entete-ligne">
+      <a class="marque" href="index-en.html">
+        <img src="img/logo.svg" alt="" width="40" height="40">
+        <span>3MOCINF1 Portal</span>
+      </a>
+      <button class="menu-bouton" aria-expanded="false" aria-controls="menu">Menu</button>
+    </div>
+    <nav id="menu" class="menu" aria-label="Main navigation">
+      <ul>
+        <li><a href="index-en.html" aria-current="page">Home</a></li>
+        <li><a href="projet-en.html">The project</a></li>
+        <li><a href="credits-en.html">Credits</a></li>
+        <li><a href="index.html" lang="fr" hreflang="fr" class="lien-langue">Français</a></li>
+      </ul>
+    </nav>
+    <div class="reglages" role="group" aria-label="Display settings">
+      <button id="bouton-theme" class="bouton-theme" aria-pressed="false">Dark mode</button>
+      <label for="curseur-taille">Text size</label>
+      <input type="range" id="curseur-taille" min="80" max="140" step="10" value="100">
+      <span id="valeur-taille">100 %</span>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="hero">
+      <div>
+        <h1>The websites of class 3MOCINF1</h1>
+        <p class="chapeau">Over three weeks, each student designs, codes and publishes <strong>their own website</strong> about a topic they know well. This portal brings them all together.</p>
+        <p><a class="bouton-lien" href="projet-en.html">Discover the project</a></p>
+      </div>
+      <img src="img/accueil.svg" alt="Drawing of a browser window showing a web page: a title, lines of text, an orange button and a picture" width="480" height="300">
+    </section>
+
+    <section class="encart" aria-labelledby="titre-expo">
+      <h2 id="titre-expo">Next event: the project fair</h2>
+      <p>On Thursday 3 December 2026 at 1:30 pm, every website stays open on its computer and the class walks around.</p>
+      <p class="compte" id="compte">See you on Thursday 3 December 2026.</p>
+    </section>
+
+    <section aria-labelledby="titre-projets">
+      <h2 id="titre-projets">The projects</h2>
+      <p>The students' websites will appear here from week 4 onwards, as soon as they are published.</p>
+      <div class="recherche">
+        <label for="filtre">Search a project (title, author or topic)</label>
+        <input type="search" id="filtre" placeholder="For example: climbing">
+      </div>
+      <p id="nombre-projets" class="nombre" aria-live="polite"></p>
+      <ul id="projets" class="cartes"></ul>
+      <noscript><p>Turn on JavaScript to see the list of projects.</p></noscript>
+    </section>
+
+    <section aria-labelledby="titre-video">
+      <h2 id="titre-video">How a page reaches you</h2>
+      <p>Before building a website, it is worth understanding what happens when you type an address: the browser sends an HTTP request to a server, which sends back HTML. This Code.org video explains it in six minutes.</p>
+      <div class="video">
+        <iframe src="https://www.youtube-nocookie.com/embed/kBXQZMmiA4s" title="Code.org video: The Internet, HTTP and HTML" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p class="source">Source: Code.org, “The Internet: HTTP &amp; HTML”, on YouTube.</p>
+    </section>
+  </main>
+
+  <footer class="pied">
+    <p>Web projects portal of class 3MOCINF1 · Computer science option · 2026</p>
+    <p>Built by Alexandre Majchrzak, the module's teacher, as an example of the project requirements.</p>
+    <p><a href="credits-en.html">Credits and sources</a> · <a href="#haut">Back to top</a></p>
+  </footer>
+  <aside id="bandeau" class="bandeau" aria-labelledby="bandeau-titre" hidden>
+    <p id="bandeau-titre"><strong>Never miss a project!</strong> Get an alert every time a new website is published.</p>
+    <div class="bandeau-boutons">
+      <button class="bandeau-oui">Yes, I want my project to succeed</button>
+      <button class="bandeau-non">no thanks, I'd rather fail mine</button>
+    </div>
+  </aside>
+</body>
+</html>

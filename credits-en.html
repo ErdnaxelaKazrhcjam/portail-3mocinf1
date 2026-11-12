@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Credits · 3MOCINF1 Portal</title>
+  <meta name="description" content="The sources of the portal's images, video and fonts, and the declaration of AI assistance.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="haut">
+  <a class="saut" href="#contenu">Skip to content</a>
+
+  <header class="entete">
+    <div class="entete-ligne">
+      <a class="marque" href="index-en.html">
+        <img src="img/logo.svg" alt="" width="40" height="40">
+        <span>3MOCINF1 Portal</span>
+      </a>
+      <button class="menu-bouton" aria-expanded="false" aria-controls="menu">Menu</button>
+    </div>
+    <nav id="menu" class="menu" aria-label="Main navigation">
+      <ul>
+        <li><a href="index-en.html">Home</a></li>
+        <li><a href="projet-en.html">The project</a></li>
+        <li><a href="credits-en.html" aria-current="page">Credits</a></li>
+        <li><a href="credits.html" lang="fr" hreflang="fr" class="lien-langue">Français</a></li>
+      </ul>
+    </nav>
+    <div class="reglages" role="group" aria-label="Display settings">
+      <button id="bouton-theme" class="bouton-theme" aria-pressed="false">Dark mode</button>
+      <label for="curseur-taille">Text size</label>
+      <input type="range" id="curseur-taille" min="80" max="140" step="10" value="100">
+      <span id="valeur-taille">100 %</span>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <h1>Credits and sources</h1>
+    <p class="chapeau">Everything that was not created for this website is cited here, as the requirements ask.</p>
+
+    <section aria-labelledby="titre-realisation">
+      <h2 id="titre-realisation">Made by</h2>
+      <p>Portal built by Alexandre Majchrzak, teacher of the Web development module (computer science option, 3MOCINF1), in HTML, CSS and JavaScript, without any framework.</p>
+      <p><strong>AI assistance:</strong> the code and the English translations were prepared with the help of Claude (Anthropic), then proofread.</p>
+    </section>
+
+    <section aria-labelledby="titre-images">
+      <h2 id="titre-images">Images</h2>
+      <ul>
+        <li>Logo, home illustration and schedule illustrations: drawings made for this website, in SVG format.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="titre-video-credits">
+      <h2 id="titre-video-credits">Video</h2>
+      <ul>
+        <li>“The Internet: HTTP &amp; HTML”, Code.org, published on YouTube and embedded without cookies (<code>youtube-nocookie.com</code>).</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="titre-polices">
+      <h2 id="titre-polices">Fonts</h2>
+      <ul>
+        <li>Fonts already installed on the visitor's device (system fonts): nothing to download, nothing to cite, and a lighter website.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="titre-dark">
+      <h2 id="titre-dark">This website's dark pattern</h2>
+      <p>Like every project, this portal contains a single, deliberate dark pattern. Did you find it?</p>
+      <details>
+        <summary>Show the answer</summary>
+        <p>The “Never miss a project!” banner on the home page uses <strong>confirmshaming</strong>: the button to decline makes the visitor feel guilty (“no thanks, I'd rather fail mine”) and it is deliberately less visible than the button to accept. On top of that, this portal sends no alerts at all: the banner is useless.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="pied">
+    <p>Web projects portal of class 3MOCINF1 · Computer science option · 2026</p>
+    <p>Built by Alexandre Majchrzak, the module's teacher, as an example of the project requirements.</p>
+    <p><a href="credits-en.html">Credits and sources</a> · <a href="#haut">Back to top</a></p>
+  </footer>
+
+</body>
+</html>
