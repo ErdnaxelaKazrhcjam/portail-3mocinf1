@@ -157,7 +157,7 @@ if (listeProjets) {
 
 // ---------------------------------------------------------------- 5. Compte à rebours (accueil)
 const compte = document.querySelector("#compte");
-const expo = new Date(2026, 11, 3, 13, 30); // mois comptés à partir de 0 : 11 = décembre
+const expo = new Date(2026, 11, 17, 13, 30); // mois comptés à partir de 0 : 11 = décembre
 
 function mettreAJourCompte() {
   const reste = expo - new Date();
